@@ -1,0 +1,48 @@
+
+    <% include header.ejs %>
+    <!-- <div class="well jumbotron">
+        <h1><%= title %></h1>
+        <p>This is a simple node web demo.</p>
+        <p><a class="btn btn-primary btn-lg" </p>
+    </div> -->
+    <div class="main_content well jumbotron">
+        <h1><%= title %></h1>
+      <!--  <p><a id="btn_add" class="btn btn-primary btn-lg">New</a></p> -->
+       
+        
+        <div id="userlist"></div>
+    </div>
+
+    <div id="dialog_adduser" style="display:none">
+        <div class="input_line">
+            <span class="input_title">UserName :</span>
+            <span><input type="text" id="username" value="" />
+            </span>
+        </div>
+
+        <div class="input_line">
+            <span class="input_title">Password :</span>
+            <span><input type="text" id="password" value="" />
+            </span>
+        </div>
+
+        <div class="input_line">
+            <span class="input_title">Age :</span>
+            <span><input type="text" id="age" value="" />
+            </span>
+        </div>
+
+        <div class="input_line">
+            <span class="input_title">Description:</span>
+            <span><input type="text" id="desc" value="" />
+            </span>
+        </div>
+    </div>
+    <style>
+        
+    </style>
+    <script type="text/javascript" src="/javascripts/home.js"></script>
+
+    <% include footer.ejs %>
+
+
